@@ -63,6 +63,7 @@ define docker::registry(
     cwd         => '/root',
     path        => ['/bin', '/usr/bin'],
     timeout     => 0,
+    creates     => '/root/.docker/config.json',
   }
 
 }
